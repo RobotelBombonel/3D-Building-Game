@@ -1,0 +1,114 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #202020;
+}
+
+/* HUD Styles */
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Tool Name */
+#toolName {
+    margin-top: 5px;
+}
+
+/* Save/Import buttons */
+button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #333;
+}
+
+/* Crosshair */
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    z-index: 1000;
+}
+
+/* Hotbar Styles */
+#hotbar {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+/* Individual Block Styles */
+.block {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Selected Block Styling */
+.block.selected {
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+/* Color Palette */
+#colorPalette {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.colorOption {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Selected Hotbar Button Style */
+.block.selected {
+    border: 3px solid #FFD700;
+    box-shadow: 0 0 10px gold;
+}

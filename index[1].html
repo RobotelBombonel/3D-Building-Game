@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hud">
+        <p id="coordinates">Coordinates: X: 0, Y: 0, Z: 0</p>
+        <p id="toolName">Tool: Custom Block</p>
+        <button id="saveWorldBtn">Save World</button>
+        <button id="importWorldBtn">Import World</button>
+        <button id="speedControlBtn">Speed: Normal</button> <!-- Speed Control button -->
+    </div>
+
+    <div id="crosshair"></div>
+
+    <div id="hotbar">
+        <div class="block selected" id="block1"></div>
+        <div class="block" id="block2"></div>
+    </div>
+
+    <!-- Color Palette -->
+    <div id="colorPalette" class="hidden">
+        <!-- Add many colors to the palette -->
+        <div class="colorOption" style="background-color: red;"></div>
+        <div class="colorOption" style="background-color: green;"></div>
+        <div class="colorOption" style="background-color: blue;"></div>
+        <div class="colorOption" style="background-color: yellow;"></div>
+        <div class="colorOption" style="background-color: purple;"></div>
+        <div class="colorOption" style="background-color: orange;"></div>
+        <div class="colorOption" style="background-color: pink;"></div>
+        <div class="colorOption" style="background-color: brown;"></div>
+        <div class="colorOption" style="background-color: gray;"></div>
+        <div class="colorOption" style="background-color: black;"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/PointerLockControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
